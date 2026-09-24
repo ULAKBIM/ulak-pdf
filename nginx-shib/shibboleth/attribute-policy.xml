@@ -15,7 +15,7 @@
             <PermitValueRule xsi:type="ScopeMatchesShibMDScope"/>
         </AttributeRule>
         <AttributeRule attributeID="affiliation">
-            <PermitValueRule xsi:type="ScopeMatchesShibMDScope"/>
+            <PermitValueRule xsi:type="ANY"/>
         </AttributeRule>
         <AttributeRule attributeID="subject-id">
             <PermitValueRule xsi:type="ScopeMatchesShibMDScope"/>
