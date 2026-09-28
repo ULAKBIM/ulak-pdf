@@ -84,4 +84,6 @@ UlakPDF, açık kaynaklı bileşenler üzerine inşa edilmiştir:
 - nginx, mkdocs-material, FastAPI — kendi lisansları
 
 UlakPDF overlay/yapılandırma kodları AGPL-3.0 lisansı ile sunulmaktadır.
-Kaynak kod: <https://github.com/ciari/ulakpdf>
+Kaynak kod: <https://github.com/ULAKBIM/ulak-pdf>
+
+Forked & Developed by **Cem İbrahim ARI**
