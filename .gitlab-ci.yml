@@ -1,0 +1,8 @@
+stages:
+  - test
+
+include:
+  - component: $CI_SERVER_FQDN/ulakbim/atb/bulut/sonarqube-ci/scan@1.1.0
+
+sonarqube-check:
+  needs: []
