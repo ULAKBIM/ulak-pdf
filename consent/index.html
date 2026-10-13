@@ -11,7 +11,7 @@
       var t = localStorage.getItem('spdf-theme');
       if (!t && window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches) t = 'dark';
       if (t === 'dark') document.documentElement.classList.add('theme-dark');
-    } catch (_) {}
+    } catch (_) { /* localStorage may be unavailable in private browsing */ }
   })();
 </script>
 
@@ -127,7 +127,7 @@
 <body>
 
 <header>
-  <img src="/landing-assets/logo.png" alt="UlakPDF" onerror="this.style.display='none'">
+  <img src="/landing-assets/logo.png" alt="UlakPDF">
   <span class="brand">UlakPDF</span>
 </header>
 

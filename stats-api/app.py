@@ -358,14 +358,15 @@ def accept_consent(
         )
     signed = _sign_consent(user, CONSENT_VERSION)
     resp = JSONResponse({"ok": True, "version": CONSENT_VERSION, "accepted_at": now})
+    is_https = (request.headers.get("x-forwarded-proto") or request.url.scheme) == "https"
     resp.set_cookie(
         "spdf-consent",
         signed,
         max_age=CONSENT_COOKIE_MAX_AGE,
         path="/",
-        httponly=False,
+        httponly=True,
         samesite="lax",
-        secure=False,
+        secure=is_https,
     )
     return resp
 
